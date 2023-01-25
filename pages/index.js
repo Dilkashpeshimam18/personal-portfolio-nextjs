@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dilkash Portfolio</title>
+        <title>Dilkash | Front-end Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <h1>
