@@ -38,16 +38,33 @@ const Hero = () => {
                     <div className='flex justify-between items-center m-auto max-w-[280px] py-4'>
 
                         <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaGithub />
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaLinkedinIn />
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <a
+                                href='https://github.com/Dilkashpeshimam18'
+                                target={"_blank"}
+                                rel={"noreferrer"}
 
-                            <SiLeetcode />
+                            ><FaGithub /></a>
                         </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <a
+                                href='https://www.linkedin.com/in/dilkash-peshimam-80730b1a8/'
+                                target={"_blank"}
+                                rel={"noreferrer"}>
+                                <FaLinkedinIn />
+
+
+                            </a>
+                        </div>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <a
+                                href='https://leetcode.com/DilkashPeshimam/'
+                                target={"_blank"}
+                                rel={"noreferrer"}>
+                                <SiLeetcode />
+
+                            </a>
+                        </div>
+                        <div onClick={() => window.location.href = 'mailto:dilkashpeshimam@gmail.com'} className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
 
                             <AiOutlineMail />
                         </div>
