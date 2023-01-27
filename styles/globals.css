@@ -3,14 +3,6 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-html,
-body {
-  background: linear-gradient(
-    110.5deg,
-    rgba(248, 196, 249, 0.66) 22.8%,
-    rgba(253, 122, 4, 0.15) 64.6%
-  );
-}
 @layer base {
   body {
     @apply text-[#1f2937] tracking-wide;
@@ -25,7 +17,7 @@ body {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway];
+    @apply text-4xl sm:text-5xl md:text-6xl;
   }
 
   h2 {
