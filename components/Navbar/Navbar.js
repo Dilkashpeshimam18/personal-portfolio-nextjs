@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { SiLeetcode } from 'react-icons/si'
 
 const Navbar = () => {
@@ -90,7 +89,7 @@ const Navbar = () => {
                             </Link>
                         </ul>
                         <div className='pt-40'>
-                            <p className='uppercase tracking-widest text-[#5651e5]'>
+                            <p className='uppercase tracking-widest font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
                                 Let&#39;s Connect
                             </p>
                             <div className='flex items-center justify-between my-5 w-full sm:w-[80%]'>
