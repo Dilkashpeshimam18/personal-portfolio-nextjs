@@ -17,16 +17,16 @@ const Navbar = () => {
                         <Link href='/'>
                             <li className='ml-10 uppercase text-sm hover:border-b'>Home</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#about'>
                             <li className='ml-10 uppercase text-sm hover:border-b'>About</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#skills'>
                             <li className='ml-10 uppercase text-sm hover:border-b'>Skills</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#projects'>
                             <li className='ml-10 uppercase text-sm hover:border-b'>Project</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#contact'>
                             <li className='ml-10 uppercase text-sm hover:border-b'>Contact</li>
                         </Link>
                     </ul>

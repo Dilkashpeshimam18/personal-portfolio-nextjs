@@ -19,13 +19,15 @@ const Projects = () => {
                         backgroundImg={mingoImg}
                         desc='Mingo is group chat application where user can create group & have chat with multiple users.'
                         tech='React JS, Typscript, Redux, Firebase Real-time Database, Google Authentication & Material UI.'
+                        sourceLink='https://github.com/Dilkashpeshimam18/mingo-chatapplication'
                     />
                     <ProjectItem
                         title='Blink IT Ecommerce Application'
-                        projectUrl='/blinkIt'
+                        projectUrl='/blink-it'
                         backgroundImg={blinkImg}
                         desc='Blink IT is an ecommerce application where users can buy blackpink products.'
                         tech=' React JS, React Context API, Firebase Firestore , Rest Authentication, Material UI & React-Image-Magnify.'
+                        sourceLink='https://github.com/Dilkashpeshimam18/react-ecommerce'
 
                     />
                     <ProjectItem
@@ -34,6 +36,7 @@ const Projects = () => {
                         backgroundImg={expensoImg}
                         desc='Expenso is a expense tracker where users can login/sign-up, add,update ,delete expense & view  chart based on expense.'
                         tech='React Js , Redux/Thunk, Chart Js , Firebase Rest Auth & Realtime database & Material UI.'
+                        sourceLink='https://github.com/Dilkashpeshimam18/expenso-react'
 
                     />
                     <ProjectItem
@@ -42,6 +45,7 @@ const Projects = () => {
                         backgroundImg={mailImg}
                         desc='In mailbox client users can compose mail to anyone, view all received, sent &  unread mail.'
                         tech='React, Redux, Custom Hooks, Firebase Rest Auth , Real-time database, Bootstrap, React-Quill & EmailJS.'
+                        sourceLink='https://github.com/Dilkashpeshimam18/mailBoxClient-react'
 
                     />
                 </div>
