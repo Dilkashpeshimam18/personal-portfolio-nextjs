@@ -7,7 +7,7 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl, desc, sourceLink,
             <div className='my-0 py-0'>
                 <Link href={projectUrl}>
                     <div className=' my-3'>
-                        <Image src={backgroundImg} width={530} height={350} />
+                        <Image src={backgroundImg} width={532} height={350} />
 
                     </div>
                     <div className='px-6  text-center '>

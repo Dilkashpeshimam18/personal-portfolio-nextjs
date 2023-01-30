@@ -21,10 +21,16 @@ const About = () => {
                         I am a result oriented person and have a always learning attitude.
                         I love to learn new technologies & keep upgrading my skills!🚀
                     </p>
+                    <a download href="/assets/DilkashResume.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className='text-sm p-3 my-6 hover:scale-105 ease-in duration-300'>
+                            Download Resume
+                        </button>
+                    </a>
 
-                    <button className='text-sm p-3 my-6 hover:scale-105 ease-in duration-300'>
-                        Download Resume
-                    </button>
                 </div>
                 <div className='w-full h-auto m-auto  flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
                     <Avatar sx={{ width: 260, height: 260 }}
@@ -33,7 +39,7 @@ const About = () => {
 
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
