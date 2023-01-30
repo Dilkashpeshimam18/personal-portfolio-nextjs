@@ -51,20 +51,20 @@ const Expenso = () => {
 
                     </div>
 
-                    <a
+                    <Link
                         href='https://github.com/Dilkashpeshimam18/expenso-react'
                         target='_blank'
                         rel='noreferrer'
                     >
                         <button className='px-8 py-2 mt-4 mr-8'>Code</button>
-                    </a>
-                    <a
-                        href='https://cryptobase-yt.web.app/'
+                    </Link>
+                    <Link
+                        href='https://expenso-898b3.web.app/'
                         target='_blank'
                         rel='noreferrer'
                     >
                         <button className='px-8 py-2 mt-4'>Demo</button>
-                    </a>
+                    </Link>
 
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>

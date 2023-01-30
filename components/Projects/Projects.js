@@ -29,7 +29,7 @@ const Projects = () => {
                         desc='Blink IT is an ecommerce application where users can buy blackpink products.'
                         tech=' React JS, React Context API, Firebase Firestore , Rest Authentication, Material UI & React-Image-Magnify.'
                         sourceLink='https://github.com/Dilkashpeshimam18/react-ecommerce'
-                        demoLink='/'
+                        demoLink='https://blinkit-ecommerce-dcfe7.web.app/'
 
                     />
                     <ProjectItem
@@ -39,7 +39,7 @@ const Projects = () => {
                         desc='Expenso is a expense tracker where users can login/sign-up, add,update ,delete expense & view  chart based on expense.'
                         tech='React Js , Redux/Thunk, Chart Js , Firebase Rest Auth & Realtime database & Material UI.'
                         sourceLink='https://github.com/Dilkashpeshimam18/expenso-react'
-                        demoLink='/'
+                        demoLink='https://expenso-898b3.web.app/'
 
                     />
                     <ProjectItem
