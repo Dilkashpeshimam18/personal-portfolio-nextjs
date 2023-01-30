@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
-const ProjectItem = ({ title, backgroundImg, tech, projectUrl, desc, sourceLink }) => {
+const ProjectItem = ({ title, backgroundImg, tech, projectUrl, desc, sourceLink, demoLink }) => {
     return (
         <div className='flex  justify-center h-[460px] w-[430px] my-1 shadow-xl shadow-gray-400 rounded-xl group cursor-pointer hover:scale-105 ease-in duration-300'>
             <div className='my-0 py-0'>
@@ -18,9 +18,14 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl, desc, sourceLink 
                 </Link>
 
                 <div className=' flex justify-center items-center '>
-                    <button className='text-sm p-3 my-6 hover:scale-105 ease-in duration-300 mx-5 w-[145px]'>
-                        View live
-                    </button>
+                    <Link href={demoLink} target={'_blank'}
+                        rel={"noreferrer"}
+                    >
+                        <button className='text-sm p-3 my-6 hover:scale-105 ease-in duration-300 mx-5 w-[145px]'>
+                            View live
+                        </button>
+                    </Link>
+
                     <Link href={sourceLink} target={"_blank"}
                         rel={"noreferrer"}>
                         <button className='text-sm p-3 my-6 hover:scale-105 ease-in duration-300 mx-5 w-[145px]'>
