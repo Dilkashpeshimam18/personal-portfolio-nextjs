@@ -13,12 +13,12 @@ const Contact = () => {
                     Contact
                 </p>
                 <h2 className='py-4'>Get In Touch</h2>
-                <div className=' grid  lg:grid-cols-6 gap-8 mt-3'>
+                <div className=' grid  lg:grid-cols-5 lg:grid-rows-6 gap-8 mt-3'>
                     {/* left */}
 
 
                     {/* right */}
-                    <div className='col-span-4  w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+                    <div className='col-span-4  w-full h-[500px] shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
                         <div className='p-4'>
                             <form
                                 action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
@@ -42,19 +42,12 @@ const Contact = () => {
                                         name='email'
                                     />
                                 </div>
-                                <div className='flex flex-col py-2'>
-                                    <label className='uppercase text-sm py-2'>Subject</label>
-                                    <input
-                                        className='border-2 rounded-lg p-3 flex border-gray-300'
-                                        type='text'
-                                        name='subject'
-                                    />
-                                </div>
+
                                 <div className='flex flex-col py-2'>
                                     <label className='uppercase text-sm py-2'>Message</label>
                                     <textarea
                                         className='border-2 rounded-lg p-3 border-gray-300'
-                                        rows='10'
+                                        rows='4'
                                         name='message'
                                     ></textarea>
                                 </div>
