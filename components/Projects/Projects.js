@@ -20,7 +20,7 @@ const Projects = () => {
                         desc='Mingo is group chat application where user can create group & have chat with multiple users.'
                         tech='React JS, Typscript, Redux, Firebase Real-time Database, Google Authentication & Material UI.'
                         sourceLink='https://github.com/Dilkashpeshimam18/mingo-chatapplication'
-                        demoLink='/'
+                        demoLink='https://mingo-chatapp.web.app/'
                     />
                     <ProjectItem
                         title='Blink IT Ecommerce Application'
