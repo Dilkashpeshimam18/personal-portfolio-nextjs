@@ -13,7 +13,7 @@ const About = () => {
                     <p className='py-2 text-gray-600'>
                         I am a Frontend Developer who's passionate & ethusiastic about creating web application. I am into web developement from past 2 years and I have experience working on serveral real world end-to-end project
                         using HTML, CSS, Javascript, React JS, Typescript, Redux,  Web3.js ,React Context API & Firebase .
-                        I have done my graduation in Bachelors of Science in Information Technology. And I have internships experience as a React Developer in startup culture.
+                        I have done my graduation in Bachelors of Science in Information Technology. And I have internships experience as a React Developer in Blockchain Technology.
 
                     </p>
                     <p className='py-2 text-gray-600'>
