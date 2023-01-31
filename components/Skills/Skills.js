@@ -15,15 +15,24 @@ import vscode from '../../public/assets/vscode.png'
 import material from '../../public/assets/material.png'
 import dsa from '../../public/assets/data-structure.png'
 import web3 from '../../public/assets/Web3.png'
+import { motion } from 'framer-motion';
+
 const Skills = () => {
     return (
         <div id='skills' className='w-full lg:h-screen p-2'>
             <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-                <p className='text-xl tracking-widest uppercase font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
-                    Skills
-                </p>
-                <h2 className='py-4'>What I Can Do</h2>
-                <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ y: [-50, 0], opacity: 1 }}
+                >
+                    <p className='text-xl tracking-widest uppercase font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
+                        Skills
+                    </p>
+                    <h2 className='py-4'>What I Can Do</h2>
+                </motion.div>
+
+                <motion.div initial={{ opacity: 0 }}
+                    whileInView={{ y: [-50, 0], opacity: 1 }} className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
 
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
@@ -206,7 +215,7 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

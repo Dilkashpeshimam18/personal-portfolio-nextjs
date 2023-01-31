@@ -4,15 +4,27 @@ import mingoImg from '../../public/assets/mingo.png'
 import blinkImg from '../../public/assets/store.png'
 import expensoImg from '../../public/assets/expenso.png'
 import mailImg from '../../public/assets/mail.png'
+import { motion } from 'framer-motion';
+
 const Projects = () => {
     return (
         <div id='projects' className='w-full'>
             <div className='max-w-[1240px] mx-auto px-2 py-16'>
-                <p className='text-xl tracking-widest uppercase font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
-                    Projects
-                </p>
-                <h2 className='py-4'>What I&apos;ve Built</h2>
-                <div className='grid md:grid-cols-2 gap-8'>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ y: [-50, 0], opacity: 1 }}
+                >
+                    <p className='text-xl tracking-widest uppercase font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
+                        Projects
+                    </p>
+                    <h2 className='py-4'>What I&apos;ve Built</h2>
+                </motion.div>
+
+                <motion.div
+                    initial={{ x: 0, opacity: 0 }}
+                    whileInView={{ x: [250, 0], opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    className='grid md:grid-cols-2 gap-8'>
 
                     <ProjectItem
                         title='Blink IT Ecommerce Application'
@@ -53,7 +65,7 @@ const Projects = () => {
                         demoLink='https://mail-box-client-react.vercel.app/'
 
                     />
-                </div>
+                </motion.div>
             </div>
         </div>
     )

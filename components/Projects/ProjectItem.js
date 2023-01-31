@@ -1,9 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 const ProjectItem = ({ title, backgroundImg, tech, projectUrl, desc, sourceLink, demoLink }) => {
     return (
-        <div className='flex  justify-center h-[520px] max-w-[530px] min-w-fit my-1 shadow-xl shadow-gray-400 rounded-xl group cursor-pointer hover:scale-105 ease-in duration-300'>
+        <motion.div initial={{ x: 0, opacity: 0 }}
+            whileInView={{ x: [250, 0], opacity: 1 }}
+            transition={{ duration: 1 }} className='flex  justify-center h-[520px] max-w-[530px] min-w-fit my-1 shadow-xl shadow-gray-400 rounded-xl group cursor-pointer hover:scale-105 ease-in duration-300'>
             <div className='my-0 py-0'>
                 <Link href={projectUrl}>
                     <div className=' my-3'>
@@ -36,7 +39,7 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl, desc, sourceLink,
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 

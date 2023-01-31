@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Link from 'next/link';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import axios from 'axios';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
     const [name, setName] = useState('')
@@ -41,11 +42,21 @@ const Contact = () => {
     return (
         <div id='contact' className='w-full lg:h-screen'>
             <div className='max-w-[1240px]  m-auto px-2 py-16 w-full '>
-                <p className='text-xl tracking-widest uppercase font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
-                    Contact
-                </p>
-                <h2 className='py-4'>Get In Touch</h2>
-                <div className=' grid  lg:grid-cols-5  gap-8 mt-3'>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ y: [-50, 0], opacity: 1 }}
+                >
+                    <p className='text-xl tracking-widest uppercase font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
+                        Contact
+                    </p>
+                    <h2 className='py-4'>Get In Touch</h2>
+                </motion.div>
+
+                <motion.div
+                    initial={{ x: 0, opacity: 0 }}
+                    whileInView={{ x: [250, 0], opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    className=' grid  lg:grid-cols-5  gap-8 mt-3'>
 
                     <div className='col-span-4  w-full h-[500px] shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
                         <div className='p-4'>
@@ -91,7 +102,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                </div>
+                </motion.div>
                 <div className='flex justify-center py-12'>
                     <Link href='/'>
 
