@@ -77,11 +77,7 @@ const Navbar = () => {
                                     Projects
                                 </li>
                             </Link>
-                            <Link href='/resume'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Resume
-                                </li>
-                            </Link>
+
                             <Link href='/#contact'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                                     Contact
@@ -95,7 +91,7 @@ const Navbar = () => {
                             <div className='flex items-center justify-between my-5 w-full sm:w-[80%]'>
 
                                 <a
-                                    href='https://github.com/fireclint'
+                                    href='https://github.com/Dilkashpeshimam18'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -104,7 +100,7 @@ const Navbar = () => {
                                     </div>
                                 </a>
                                 <a
-                                    href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                                    href='https://www.linkedin.com/in/dilkash-peshimam-80730b1a8/'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -113,7 +109,10 @@ const Navbar = () => {
                                     </div>
                                 </a>
 
-                                <Link href='/resume'>
+                                <Link href='https://leetcode.com/DilkashPeshimam/'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
                                     <div
                                         onClick={() => setNav(!nav)}
                                         className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
@@ -123,7 +122,10 @@ const Navbar = () => {
                                 </Link>
                                 <Link href='/#contact'>
                                     <div
-                                        onClick={() => setNav(!nav)}
+                                        onClick={() => {
+                                            setNav(!nav)
+                                            window.location.href = 'mailto:dilkashpeshimam@gmail.com'
+                                        }}
                                         className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                                     >
                                         <AiOutlineMail />
