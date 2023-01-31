@@ -3,6 +3,8 @@ import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Image from 'next/image';
 import mailbox from '../public/assets/mail.png'
+import { motion } from 'framer-motion';
+
 const MailboxClient = () => {
     return (
         <div className='w-full'>
@@ -22,7 +24,11 @@ const MailboxClient = () => {
             </div>
 
             <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
-                <div className='col-span-4'>
+                <motion.div
+                    initial={{ x: 0, opacity: 0 }}
+                    whileInView={{ x: [-250, 0], opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    className='col-span-4'>
                     <p>Project</p>
                     <h2>Overview</h2>
                     <p>
@@ -65,8 +71,12 @@ const MailboxClient = () => {
                         <button className='px-8 py-2 mt-4'>Demo</button>
                     </Link>
 
-                </div>
-                <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
+                </motion.div>
+                <motion.div
+                    initial={{ x: 0, opacity: 0 }}
+                    whileInView={{ x: [250, 0], opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
                     <div className='p-2'>
                         <p className='text-center font-bold pb-2'>Technologies</p>
                         <div className='grid grid-cols-3 md:grid-cols-1 '>
@@ -108,10 +118,14 @@ const MailboxClient = () => {
                             </p>
                         </div>
                     </div>
-                </div>
-                <Link href='/#projects'>
-                    <p className='underline cursor-pointer'>Back</p>
-                </Link>
+                </motion.div>
+                <motion.div initial={{ opacity: 0 }}
+                    whileInView={{ y: [-50, 0], opacity: 1 }}>
+                    <Link href='/#projects'>
+                        <p className='underline cursor-pointer'>Back</p>
+                    </Link>
+                </motion.div>
+
             </div>
         </div>
     )
