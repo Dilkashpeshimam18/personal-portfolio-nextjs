@@ -13,15 +13,7 @@ const Projects = () => {
                 </p>
                 <h2 className='py-4'>What I&apos;ve Built</h2>
                 <div className='grid md:grid-cols-2 gap-8'>
-                    <ProjectItem
-                        title='Mingo Chat Application'
-                        projectUrl='/mingo'
-                        backgroundImg={mingoImg}
-                        desc='Mingo is group chat application where user can create group & have chat with multiple users.'
-                        tech='React JS, Typscript, Redux, Firebase Real-time Database, Google Authentication & Material UI.'
-                        sourceLink='https://github.com/Dilkashpeshimam18/mingo-chatapplication'
-                        demoLink='https://mingo-chatapp.web.app/'
-                    />
+
                     <ProjectItem
                         title='Blink IT Ecommerce Application'
                         projectUrl='/blink-it'
@@ -31,6 +23,15 @@ const Projects = () => {
                         sourceLink='https://github.com/Dilkashpeshimam18/react-ecommerce'
                         demoLink='https://blinkit-ecommerce-dcfe7.web.app/'
 
+                    />
+                    <ProjectItem
+                        title='Mingo Chat Application'
+                        projectUrl='/mingo'
+                        backgroundImg={mingoImg}
+                        desc='Mingo is group chat application where user can create group & have chat with multiple users.'
+                        tech='React JS, Typscript, Redux, Firebase Real-time Database, Google Authentication & Material UI.'
+                        sourceLink='https://github.com/Dilkashpeshimam18/mingo-chatapplication'
+                        demoLink='https://mingo-chatapp.web.app/'
                     />
                     <ProjectItem
                         title='Expenso'

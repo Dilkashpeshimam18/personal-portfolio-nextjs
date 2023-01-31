@@ -1,11 +1,43 @@
 import React, { useState } from 'react'
 import Link from 'next/link';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+import axios from 'axios';
 
 const Contact = () => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            if (name != '' && email != '' && message != '') {
+                let data = {
+                    name: name,
+                    email: email,
+                    message: message
+                }
+                const response = await axios.post('https://portfolio-1e3c0-default-rtdb.firebaseio.com/contact.json', data)
+                    .then((res) => {
+                        console.log(res)
+                        setName('')
+                        setMessage('')
+                        setEmail('')
+                        alert('Your response is submiited. Will get back to you soon!')
+                    })
+
+
+
+            } else {
+                alert('Please enter the value of all the fields!')
+
+            }
+
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
     return (
         <div id='contact' className='w-full lg:h-screen'>
             <div className='max-w-[1240px]  m-auto px-2 py-16 w-full '>
@@ -13,17 +45,12 @@ const Contact = () => {
                     Contact
                 </p>
                 <h2 className='py-4'>Get In Touch</h2>
-                <div className=' grid  lg:grid-cols-5 lg:grid-rows-6 gap-8 mt-3'>
-                    {/* left */}
+                <div className=' grid  lg:grid-cols-5  gap-8 mt-3'>
 
-
-                    {/* right */}
                     <div className='col-span-4  w-full h-[500px] shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
                         <div className='p-4'>
                             <form
-                                action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
-                                method='POST'
-                                encType='multipart/form-data'
+                                onSubmit={handleSubmit}
                             >
                                 <div className='flex flex-col'>
                                     <label className='uppercase text-sm py-2'>Name</label>
@@ -31,6 +58,8 @@ const Contact = () => {
                                         className='border-2 rounded-lg p-3 flex border-gray-300'
                                         type='text'
                                         name='name'
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
                                     />
                                 </div>
 
@@ -40,6 +69,8 @@ const Contact = () => {
                                         className='border-2 rounded-lg p-3 flex border-gray-300'
                                         type='email'
                                         name='email'
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
                                     />
                                 </div>
 
@@ -49,6 +80,8 @@ const Contact = () => {
                                         className='border-2 rounded-lg p-3 border-gray-300'
                                         rows='4'
                                         name='message'
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
                                     ></textarea>
                                 </div>
                                 <button className='w-full p-4 text-gray-100 mt-4'>
