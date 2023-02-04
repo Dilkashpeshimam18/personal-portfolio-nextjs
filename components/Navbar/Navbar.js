@@ -11,7 +11,16 @@ const Navbar = () => {
     }
     return (
         <div className='fixed w-full shadow-xl h-20 z-[100]'>
-            <div className='flex justify-end items-center w-full h-full px-2 2xl:px-16'>
+            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+                <div>
+                    <ul>
+                        <Link href='/'>
+                            <li className='ml-10 font-extrabold text-1xl  uppercase text-sm font-mono border-b  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Dilkash</li>
+                        </Link>
+
+                    </ul>
+
+                </div>
                 <div>
                     <ul className='hidden md:flex'>
                         <Link href='/'>
@@ -24,11 +33,19 @@ const Navbar = () => {
                             <li className='ml-10 uppercase text-sm hover:border-b'>Skills</li>
                         </Link>
                         <Link href='/#projects'>
-                            <li className='ml-10 uppercase text-sm hover:border-b'>Project</li>
+                            <li className='ml-10 uppercase text-sm hover:border-b'>Projects</li>
+                        </Link>
+
+                        <Link href='/DilkashResume .pdf'
+                            target={"_blank"}
+                            rel={"noreferrer"}
+                        >
+                            <li className='ml-10 uppercase text-sm hover:border-b'>Resume</li>
                         </Link>
                         <Link href='/#contact'>
                             <li className='ml-10 uppercase text-sm hover:border-b'>Contact</li>
                         </Link>
+
                     </ul>
                     <div onClick={handleNav} className='md:hidden'>
                         <AiOutlineMenu size={25} />
@@ -77,12 +94,19 @@ const Navbar = () => {
                                     Projects
                                 </li>
                             </Link>
-
+                            <Link href='/DilkashResume .pdf'
+                                target={"_blank"}
+                                rel={"noreferrer"}
+                            >
+                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                    Resume
+                                </li>                            </Link>
                             <Link href='/#contact'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                                     Contact
                                 </li>
                             </Link>
+
                         </ul>
                         <div className='pt-40'>
                             <p className='uppercase tracking-widest font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>

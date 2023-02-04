@@ -13,8 +13,9 @@ const About = () => {
 
                     className='col-span-2'>
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ y: [-50, 0], opacity: 1 }}
+                        initial={{ x: 0, opacity: 0 }}
+                        whileInView={{ x: [-250, 0], opacity: 1 }}
+                        transition={{ duration: 1 }}
                     >
                         <p className='uppercase text-xl tracking-widest font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
                             About
@@ -38,7 +39,7 @@ const About = () => {
                             I am a result oriented person and have a always learning attitude.
                             I love to learn new technologies & keep upgrading my skills!🚀
                         </p>
-                        <a download href="/assets/DilkashResume.pdf"
+                        <a download href='/DilkashResume .pdf'
                             alt="alt text"
                             target="_blank"
                             rel="noopener noreferrer"
