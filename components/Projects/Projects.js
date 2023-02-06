@@ -22,9 +22,8 @@ const Projects = () => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ x: 0, opacity: 0 }}
-                    whileInView={{ x: [250, 0], opacity: 1 }}
-                    transition={{ duration: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ y: [-50, 0], opacity: 1 }}
                     className='grid md:grid-cols-2 gap-8'>
 
                     <ProjectItem

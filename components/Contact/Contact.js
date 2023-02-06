@@ -54,9 +54,8 @@ const Contact = () => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ x: 0, opacity: 0 }}
-                    whileInView={{ x: [250, 0], opacity: 1 }}
-                    transition={{ duration: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ y: [-50, 0], opacity: 1 }}
                     className=' grid  lg:grid-cols-5  gap-8 mt-3'>
 
                     <div className='col-span-4  w-full h-[500px] shadow-xl shadow-gray-400 rounded-xl lg:p-4'>

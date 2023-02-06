@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 const ProjectItem = ({ title, backgroundImg, tech, projectUrl, desc, sourceLink, demoLink }) => {
     return (
-        <motion.div initial={{ x: 0, opacity: 0 }}
-            whileInView={{ x: [250, 0], opacity: 1 }}
+        <motion.div initial={{ opacity: 0 }}
+            whileInView={{ y: [-50, 0], opacity: 1 }}
             transition={{ duration: 1 }} className='flex  justify-center h-[540px] max-w-[530px] min-w-full my-1 shadow-xl shadow-gray-400 rounded-xl group cursor-pointer hover:scale-105 ease-in duration-300'>
             <div className='my-0 py-0 min-w-full'>
                 <Link href={projectUrl}>
