@@ -1,10 +1,17 @@
 {
   "hosting": {
     "public": "public",
+    "site":"portfolio-1e3c0",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextServer"
+      }
     ]
   }
 }
