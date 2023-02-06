@@ -11,8 +11,9 @@ const Projects = () => {
         <div id='projects' className='w-full'>
             <div className='max-w-[1240px] mx-auto px-2 py-16'>
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ y: [-50, 0], opacity: 1 }}
+                    initial={{ x: 0, opacity: 0 }}
+                    whileInView={{ x: [-250, 0], opacity: 1 }}
+                    transition={{ duration: 1 }}
                 >
                     <p className='text-xl tracking-widest uppercase font-bold-200 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
                         Projects
